@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+    background-color: black;
+}
+header{
+    margin: 20px 20px 20px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+ul{
+    list-style-type:none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+}
+li{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 640px) {
+    header{
+        display: block;
+        margin: 20px 5px 20px 5px;
+    }
+    h1{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    ul{
+        width: 100%;
+    }
+}
+
+/* Animation */
+@keyframes  deep-animation{
+    0%{color: white;}
+    10%{color: rgb(133, 133, 133);}
+    20%{color: white;}
+    30%{color: rgb(255, 255, 255);}
+    40%{color: white}
+    50%{color: white}
+    60%{color: rgb(103, 103, 103)}
+    70%{color: white}
+    80%{color: white}
+    90%{color: rgb(122, 122, 122)}
+    100%{color: rgb(255, 255, 255)}
+
+}
+@keyframes analyser-animation {
+    0%{color: rgb(0, 255, 0);}
+    50%{color: red;}
+    100%{color: rgb(132, 0, 255);}
+}
+.deep{
+    animation-name: deep-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1, 2.9, 0,-1.63);
+}
+.analyser{
+    animation-name: analyser-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
