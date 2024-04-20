@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family: monospace;
 }
+hr{     border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
 body{
     background-color: black;
 }
@@ -83,3 +87,40 @@ a:hover{
     animation-direction: alternate;
     animation-timing-function: linear;
 }
+main{
+    margin-top: 250px;
+}
+
+footer {
+    
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    .footer {
+      font-size: 14px;
+    }
+  }
+  /* Footer Animation */
+  #footer-img{
+    margin: 0 auto;
+    display: block;
+    width: 250px;
+    animation-name: footer-animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+  }
+  @keyframes footer-animation {
+    0%{ filter: hue-rotate(0deg);}
+    50%{filter: hue-rotate(90deg);}
+    100%{filter: hue-rotate(240deg);}
+  }
+  
