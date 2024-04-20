@@ -111,7 +111,7 @@ footer {
   #footer-img{
     margin: 0 auto;
     display: block;
-    width: 250px;
+    width: 200px;
     animation-name: footer-animation;
     animation-duration: 4s;
     animation-iteration-count: infinite;
