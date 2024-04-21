@@ -54,77 +54,7 @@ a:hover{
         width: 100%;
     }
 }
-/* three lines */
-#navbar{
-    z-index: 999;
-    background-color: rgb(0, 0, 0);
-    width: 100px;
-    height: 200px;
-    position: fixed;
-    transition: 0.3s;
-    border: 1px solid rgb(102, 102, 102);
-    border-radius: 5px;
-}
-/* Responsive navbar */
-@media screen and (max-width: 800px) {
-    #navbar{
-        right: 35px;
-        top: 20px;
-    }
-}
-@media screen and (max-width : 700px) {
-    #navbar{
-        right: 30px;
-        top: 20px;
-    }
-}
-@media screen and (max-width: 640px ) {
-    #navbar{
-        right: 90px;
-        top: 70px;
-    }
-}
-@media screen and (max-width: px) {
-    #navbar{right: 28px;
-    top: 77px;
-}
-}
-.hide{
-    display: none;
-}
-.visible{
-    display: block;
-    transition: 0.3s;
-}
-.container {
-    display: inline-block;
-    cursor: pointer;
-    z-index: 999;
-  }
-  @media screen and (min-width: 800px) {
-    .container{
-        display: none;
-    }
-}
-  .bar1, .bar2, .bar3 {
-    width: 25px;
-    height: 2px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.2s;
-    border-radius: 5px;
-  }
-  
-  .change .bar1 {
-    transform: translate(0, 5px) rotate(-45deg);
-  }
-  
-  .change .bar2 {opacity: 0;}
-  
-  .change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
-  }
-  /* RESPONSIVE NAVBAR eND */
+
 /* HEADER Animation START */
 @keyframes  deep-animation{
     0%{color: white;}
