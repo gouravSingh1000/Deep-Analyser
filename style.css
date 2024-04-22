@@ -4,6 +4,7 @@
     color: white;
     box-sizing: border-box;
     font-family: monospace;
+    scroll-behavior: smooth;
 }
 hr{     border: 0;
     height: 1px;
@@ -91,10 +92,47 @@ header ul li a:hover{
     animation-timing-function: linear;
 }
 /* HEADER ANIMATION END */
-main{
-    margin-top: 250px;
-}
+/* header end */
+/* main start */
+.main{
+  margin: 40px 20px 40px 20px;
+  display: flex;
 
+}
+aside{
+  border-right: 1px solid rgb(143, 143, 143);
+  width: 35%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+aside>h2{
+  text-align: center;
+}
+main{
+   display: flex;
+   flex-direction: column;
+   width: 65%;
+   text-align: center;
+}
+main>h2{
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .main{
+    flex-direction: column-reverse;
+  }
+  main{
+    display: flex;
+    width: 100%;
+  }
+  aside{
+    border: none;
+    width: 100%;
+  }
+}
+/* main end */
+/* Footer Start */
 footer {
     background-color: #000000;
     color: #fff;
