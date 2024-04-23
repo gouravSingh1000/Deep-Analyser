@@ -6,61 +6,25 @@
     font-family: monospace;
     scroll-behavior: smooth;
 }
-hr{     border: 0;
+
+body{
+    background-color: black;
+    display: grid;
+    grid-template-areas: "header header header header"
+                         "aside main main main"
+                         "aside main main main"
+                         "footer footer footer footer";
+}
+hr{     
+    border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
-main p{
-  text-align: justify;
-}
-body{
-    background-color: black;
-}
 /* HEADER */
 header{
-    margin: 20px 20px 20px 10vw;
-    display: flex;
-    justify-content: space-between;
+  grid-area: header;
 }
-header h1{
-    text-align: center;
-    font-size: 40px;
-    text-transform: uppercase;
-}
-header ul{
-    list-style-type:none;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 40%;
-}
-header ul li{
-    font-size: 1.2em;
-    font-weight: bold;
-}
-header ul li a{
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-}
-header ul li a:hover{
-    text-decoration: underline;
-}
-@media screen and (max-width: 640px) {
-    header{
-        display: block;
-        margin: 20px 5px 20px 5px;
-    }
-    header h1{
-        font-size: 35px;
-        margin-bottom: 20px;
-    }
-    header ul{
-        width: 100%;
-    }
-}
-
-/* HEADER Animation START */
+/* HEADER ANIMATION START */
 @keyframes  deep-animation{
     0%{color: white;}
     10%{color: rgb(133, 133, 133);}
@@ -95,90 +59,23 @@ header ul li a:hover{
     animation-timing-function: linear;
 }
 /* HEADER ANIMATION END */
-/* header end */
-/* main start */
-.main{
-  margin: 40px 15px 40px 15px;
-  display: flex;
-
-}
+/* HEADER END */
+/* ASIDE START*/
 aside{
-  border-right: 1px solid rgb(143, 143, 143);
-  width: 35%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+  grid-area: aside;
 }
-aside>h2{
-  text-align: center;
-}
-aside>div{
-  margin: 20px;
-}
+/* ASIDE END */
+/* MAIN START */
 main{
-   display: flex;
-   flex-direction: column;
-   width: 65%;
-   text-align: center;
+  grid-area: main;
 }
-main>h2{
-  text-align: center;
+/* MAIN END */
+/* FOOTER START */
+footer{
+  grid-area: footer;
 }
-main > a{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 10px;
-  text-decoration: none;
-}
-main img{
-  height: 130px;
-  border-radius: 15px;
-  margin-bottom: 20px;
-}
-@media screen and (max-width: 500px) {
-  .main{
-    flex-direction: column-reverse;
-  }
-  main{
-    display: flex;
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  main >a{
-  border: 1px solid rgb(169, 169, 169);
-  margin: 30px 0 15px 0;
-  border-radius: 15px;
-} 
-  main img{
-    height: 150px;
-  }
-  aside{
-    border: none;
-    width: 100%;
-  }
-}
-/* main end */
-/* Footer Start */
-footer {
-    background-color: #000000;
-    color: #fff;
-    margin: 40px 0 60px 0;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-
-  @media (max-width: 600px) {
-    .footer {
-      font-size: 14px;
-    }
-  }
-  /* Footer Animation START*/
-  #footer-img{
-    margin: 0 auto;
-    display: block;
+  /* FOOTER ANIMATION START*/
+  footer img{
     height: 140px;
     animation-name: footer-animation;
     animation-duration: 4s;
@@ -191,38 +88,5 @@ footer {
     50%{filter: hue-rotate(90deg);}
     100%{filter: hue-rotate(240deg);}
   }
-  /* footer Animation end */
-  .footer-start{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0 20px 20px 20px;
-  }
-  .footer-nav{
-    width: 50%;
-    height: 130px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.1em;
-  }
-  .footer-nav ul a{
-    text-decoration: none;
-  }
-  .footer-nav ul a:hover{
-    text-decoration: underline;
-  }
-  .footer-nav ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: inherit;
-  }
-  .social-media{
-    margin-bottom: 20px;
-    font-size: 1.2em;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-
+  /* FOOTER ANIMATION END */
   /* FOOTER ANIMATION END */
