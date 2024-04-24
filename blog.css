@@ -104,46 +104,10 @@ aside{
 /* MAIN START */
 main{
   grid-area: main;
-  padding: 20px 10px 20px 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
-main .section-link{
-  text-decoration: none;
-}
-main section{
-  margin: 0 auto;
-  text-align: center;
-  border: 1px solid rgb(175, 175, 175);
-  border-radius: 5px;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  gap: 20px;
-}
-main  section article{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: center;
-}
-main  section article p{
-  text-align: justify;
-}
-main  section article p span{
-  color: #3366cc;
-  text-decoration: underline;
-}
-main section img{
-  width: 280px;
-  border-radius: 5px;
-}
+
 @media screen and (max-width: 500px) {
-  main a section{
-    flex-direction: column;
-  }
+ 
 }
 /* MAIN END */
 /* FOOTER START */
