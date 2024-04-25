@@ -11,8 +11,8 @@ body{
     background-color: black;
     display: grid;
     grid-template-areas: "header header header header"
-                         "aside main main main"
-                         "aside main main main"
+                         "aside aside aside aside "
+                         "main main main main "
                          "footer footer footer footer";
 }
 hr{     
@@ -99,15 +99,90 @@ nav ul a:hover{
 /* ASIDE START*/
 aside{
   grid-area: aside;
+  padding: 20px 10px 20px 10px;
+  text-align: center;
+}
+aside details summary{
+  font-size: 1.1em;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+aside details div{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+aside details div a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #3366cc;
+}
+aside details div a:hover{
+  text-decoration: underline;
 }
 /* ASIDE END */
 /* MAIN START */
 main{
   grid-area: main;
+  padding: 10px 10px 20px 10px;
+  text-align: center;
 }
-
-@media screen and (max-width: 500px) {
- 
+main img{
+  width: 300px;
+  border-radius: 5px;
+}
+main div{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+main div section{
+  padding: 10px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+}
+main div section dl dt{
+  margin: 5px;
+}
+main div section dl dd{
+  text-align: justify;
+}
+main div section details{
+  text-align: justify;
+  border: 1px solid rgb(181, 181, 181);
+  padding: 10px;
+  border-radius: 5px;
+}
+main div section details summary{
+  font-weight: bold;
+}
+main div section details img{
+  width: 280px;
+  border-radius: 5px;
+  margin: 10px auto 10px auto ;
+}
+@media screen and (min-width: 500px) {
+  main>img{
+    display: none;
+  }
+  main div{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  main div section details{
+    text-align: center;
+  }
+  main div>h1{
+    text-align: center;
+  }
 }
 /* MAIN END */
 /* FOOTER START */
