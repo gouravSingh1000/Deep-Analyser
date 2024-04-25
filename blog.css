@@ -123,6 +123,11 @@ aside details div a:hover{
 }
 /* ASIDE END */
 /* MAIN START */
+main div section a{
+  color: blue;
+  display: block;
+  margin: 10px;
+}
 main{
   grid-area: main;
   padding: 10px 10px 20px 10px;
