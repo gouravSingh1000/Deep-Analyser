@@ -117,6 +117,9 @@ main section{
 main section p{
     text-align: justify;
 }
+main section p a{
+    color: blue;
+}
 /* MAIN END */
 /* FOOTER START */
 footer{

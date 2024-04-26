@@ -133,6 +133,10 @@ main{
   padding: 10px 10px 20px 10px;
   text-align: center;
 }
+main p{
+  text-align: justify;
+  padding: 10px 0px 10px 0px;
+}
 main img{
   width: 300px;
   border-radius: 5px;
@@ -198,6 +202,7 @@ footer{
 }
   /* FOOTER ANIMATION START*/
   footer img{
+    margin: 10px 0 5px 0;
     height: 115px;
     animation-name: footer-animation;
     animation-duration: 4s;
