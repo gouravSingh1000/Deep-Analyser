@@ -140,7 +140,7 @@ main section img{
   width: 280px;
   border-radius: 5px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 490px) {
   main a section{
     flex-direction: column;
   }
